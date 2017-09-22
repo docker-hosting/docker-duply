@@ -2,7 +2,8 @@ FROM ubuntu:trusty
 
 LABEL maintainer="Kurt Huwig"
 
-RUN apt-add-repository ppa:duplicity-team/ppa
+RUN apt-get install software-properties-common python-software-properties
+RUN add-apt-repository ppa:duplicity-team/ppa
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     duplicity \
     duply \

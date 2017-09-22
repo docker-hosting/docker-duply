@@ -2,7 +2,7 @@ FROM ubuntu:trusty
 
 LABEL maintainer="Mirko Hecky"
 
-RUN apt-get install -y software-properties-common python-software-properties
+RUN apt-get install -y python-software-properties
 
 RUN add-apt-repository ppa:duplicity-team/ppa
 
